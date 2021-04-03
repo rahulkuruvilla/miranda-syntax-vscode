@@ -1,0 +1,31 @@
+{
+    "name": "miranda",
+    "displayName": "Miranda",
+    "description": "Syntax highlighting for the functional programming language Miranda.",
+    "version": "0.0.1",
+    "publisher": "Rahul Kuruvilla",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rahulkuruvilla/miranda-syntax-vscode",
+    },
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "miranda",
+            "aliases": ["Miranda", "miranda"],
+            "extensions": [".m"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "miranda",
+            "scopeName": "source.miranda",
+            "path": "./syntaxes/miranda.json"
+        }]
+    }
+}

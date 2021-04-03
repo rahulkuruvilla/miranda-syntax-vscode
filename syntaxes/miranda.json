@@ -1,0 +1,55 @@
+ {
+  "scopeName": "source.miranda",
+  "name": "Miranda",
+  "fileTypes": [
+    "m"
+  ],
+  "patterns": [
+    {
+      "name": "comment.line.vbar.miranda",
+      "match": "\\|\\|.*"
+    },
+    {
+      "name": "constant.character.miranda",
+      "begin": "'",
+      "end": "'"
+    },
+    {
+      "name": "constant.numeric.miranda",
+      "match": "\\b[0-9]+(\\.[0-9]+)?(e-?[0-9]*(\\.[0-9]+)?)?\\b"
+    },
+    {
+      "name": "constant.language.miranda",
+      "match": "(\\bTrue\\b|\\bFalse\\b|\\(\\))"
+    },
+    {
+      "name": "keyword.control.miranda",
+      "match": "\\bif\\b|\\botherwise\\b|\\bwhere\\b|\\berror\\b"
+    },
+    {
+      "name": "keyword.operator.math.miranda",
+      "match": "\\+|-|\\*|\\/|\\^|\\bdiv\\b|\\bmod\\b"
+    },
+    {
+      "name": "keyword.operator.logic.miranda",
+      "match": "\\\\/|&|~"
+    },
+    {
+      "name": "keyword.operator.comparison.miranda",
+      "match": "=|~=|<|<=|>|>="
+    },
+    {
+      "name": "keyword.operator.other.miranda",
+      "match": ":|\\+\\+|--|->"
+    },
+    {
+      "name": "storage.type.miranda",
+      "match": "\\b(bool|char|num)\\b|\\*+"
+    },
+    {
+      "name": "string.quoted.double.miranda",
+      "begin": "\"",
+      "end": "\""
+    }
+  ]
+}
